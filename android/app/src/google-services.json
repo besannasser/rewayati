@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "982734127287",
+    "project_id": "rewayati",
+    "storage_bucket": "rewayati.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982734127287:android:5725e9fe3a6b048d9f0d32",
+        "android_client_info": {
+          "package_name": "com.example.riwayat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982734127287-3q9r8i3uc44r3ek0oapvn97frcqpm1r2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiEYJpE0go0C_d_Sd4l9deqIQ77jhebcs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982734127287-3q9r8i3uc44r3ek0oapvn97frcqpm1r2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
