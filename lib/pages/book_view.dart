@@ -21,7 +21,7 @@ class _BookViewState extends State<BookView> {
     pages.add(PageModle2('assets/images/im1_002.png'));
     pages.add(PageModle2('assets/images/im1_003.png'));
     pages.add(PageModle2('assets/images/im1_004.png'));
-    pages.add(PageModle2('assets/images/im1_005.png'));
+    pages.add(PageModle2('assets/images/im1_005.png'));pages.add(PageModle2('assets/images/im1_005.png'));
   }
 
   @override
