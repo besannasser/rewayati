@@ -35,7 +35,7 @@ class CategoryListPage extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                         builder: (context) => DetailsPage(
-                              category: this.categories[index],
+                              category: this.categories[index], index: index ,
                             )));
               });
         },

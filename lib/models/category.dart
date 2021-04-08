@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:riwayat/models/img_book.dart';
 import 'package:riwayat/models/questions.dart';
 
 class Category {
@@ -10,6 +11,7 @@ class Category {
   String imgName3;
   List<Category> subCategories;
   List<Questions> questions;
+  List<ImgBook> imgBook;
 
 
   Category(
@@ -21,6 +23,7 @@ class Category {
       this.imgName3,
       this.subCategories = const [],
       this.questions = const [],
+      this.imgBook = const [],
     }
   );
 }

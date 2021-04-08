@@ -1,7 +1,8 @@
 import 'package:riwayat/models/category.dart';
 import 'package:riwayat/models/imam.dart';
+import 'package:riwayat/models/img_book.dart';
+import 'package:riwayat/models/questions.dart';
 import 'package:riwayat/models/subcategory.dart';
-import 'package:riwayat/widgets/sub_questions.dart';
 import 'appcolors.dart';
 
 class Utils {
@@ -50,28 +51,34 @@ class Utils {
         imgName1: "cat1",
         imgName2: "cat1_1",
         imgName3: "cat1_1_1",
+        imgBook:[
+          ImgBook("im1_001"),
+          ImgBook("im1_002"),
+          ImgBook("im1_003"),
+          ImgBook("im1_004"),        ImgBook("im1_005"),
+        ],
         questions: [
-          SubQuestions(
-              question: "amjad0",
-              answer1: "dsfhdsjfkj",
-              answer2: "kjdsfkdsjf",
-              answer3: "kjdsfsdkj",
-              answer4: "kjsdf",
-              correctAnswer: "dsfhdsjfkj"),
-          SubQuestions(
-              question: "amjad1",
-              answer1: "dsfhdsjfkj",
-              answer2: "kjdsfkdsjf",
-              answer3: "kjdsfsdkj",
-              answer4: "kjsdf",
-              correctAnswer: "jdksfhsdjk"),
-          SubQuestions(
-              question: "amjad2",
-              answer1: "dsfhdsjfkj",
-              answer2: "kjdsfkdsjf",
-              answer3: "kjdsfsdkj",
-              answer4: "kjsdf",
-              correctAnswer: "jdksfhsdjk"),
+          Questions(
+              "amjad0",
+              "dsfhdsjfkj",
+              "kjdsfkdsjf",
+              "kjdsfsdkj",
+              "kjsdf",
+              "jdksfhsdjk"),
+          Questions(
+              "amjad1",
+              "dsfhdsjfkj",
+              "kjdsfkdsjf",
+              "kjdsfsdkj",
+              "kjsdf",
+              "jdksfhsdjk"),
+          Questions(
+              "amjad2",
+              "dsfhdsjfkj",
+              "kjdsfkdsjf",
+              "kjdsfsdkj",
+              "kjsdf",
+              "jdksfhsdjk"),
         ],
         subCategories: [
           SubCategory(
@@ -160,29 +167,34 @@ class Utils {
           imgName1: "cat2",
           imgName2: "cat2_1",
           imgName3: "cat2_1_1",
-          questions: [
-            SubQuestions(
-                question: "ahsjddhfkjsdhfkjdshkjfhkdsjhfkjdshkfjhdskjfhkjdshfkjshdkjmed0",
-                answer1: "dsfhdsjfkj",
-                answer2: "kjdsfkdsjf",
-                answer3: "kjdsfsdkj",
-                answer4: "kjsdf",
-                correctAnswer: "jdksfhsdjk"),
-            SubQuestions(
-                question: "ahmed1",
-                answer1: "dsfhdsjfkj",
-                answer2: "kjdsfkdsjf",
-                answer3: "kjdsfsdkj",
-                answer4: "kjsdf",
-                correctAnswer: "jdksfhsdjk"),
-            SubQuestions(
-                question: "ahmed2",
-                answer1: "dsfhdsjfkj",
-                answer2: "kjdsfkdsjf",
-                answer3: "kjdsfsdkj",
-                answer4: "kjsdf",
-                correctAnswer: "jdksfhsdjk"),
+          imgBook:[
+            ImgBook("cat2"),
+            ImgBook("cat2"),
+            ImgBook("cat2"),
           ],
+        questions: [
+          Questions(
+              "ahmed0",
+              "dsfhdsjfkj",
+              "kjdsfkdsjf",
+              "kjdsfsdkj",
+              "kjsdf",
+              "jdksfhsdjk"),
+          Questions(
+              "ahmed1",
+              "dsfhdsjfkj",
+              "kjdsfkdsjf",
+              "kjdsfsdkj",
+              "kjsdf",
+              "jdksfhsdjk"),
+          Questions(
+              "ahmed2",
+              "dsfhdsjfkj",
+              "kjdsfkdsjf",
+              "kjdsfsdkj",
+              "kjsdf",
+              "jdksfhsdjk"),
+        ],
           subCategories: [
             SubCategory(
               numberOFPart: 1,
@@ -281,28 +293,33 @@ class Utils {
           imgName1: "cat3",
           imgName2: "cat3_1",
           imgName3: "cat3_1_1",
+          imgBook:[
+            ImgBook("cat3"),
+            ImgBook("cat3"),
+            ImgBook("cat3"),
+          ],
           questions: [
-            SubQuestions(
-                question: "ali0",
-                answer1: "dsfhdsjfkj",
-                answer2: "kjdsfkdsjf",
-                answer3: "kjdsfsdkj",
-                answer4: "kjsdf",
-                correctAnswer: "jdksfhsdjk"),
-            SubQuestions(
-                question: "ali1",
-                answer1: "dsfhdsjfkj",
-                answer2: "kjdsfkdsjf",
-                answer3: "kjdsfsdkj",
-                answer4: "kjsdf",
-                correctAnswer: "jdksfhsdjk"),
-            SubQuestions(
-                question: "ali2",
-                answer1: "dsfhdsjfkj",
-                answer2: "kjdsfkdsjf",
-                answer3: "kjdsfsdkj",
-                answer4: "kjsdf",
-                correctAnswer: "jdksfhsdjk"),
+            Questions(
+               "ali0",
+                "dsfhdsjfkj",
+                "kjdsfkdsjf",
+                "kjdsfsdkj",
+                 "kjsdf",
+              "jdksfhsdjk"),
+            Questions(
+                "ali1",
+                "dsfhdsjfkj",
+                "kjdsfkdsjf",
+                "kjdsfsdkj",
+                "kjsdf",
+                "jdksfhsdjk"),
+            Questions(
+                "ali2",
+                "dsfhdsjfkj",
+                "kjdsfkdsjf",
+                "kjdsfsdkj",
+                "kjsdf",
+                "jdksfhsdjk"),
           ],
           subCategories: [
             SubCategory(

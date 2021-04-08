@@ -4,14 +4,15 @@ import 'package:riwayat/helpers/appcolors.dart';
 import 'package:riwayat/helpers/utils.dart';
 import 'package:riwayat/models/category.dart';
 import 'package:riwayat/pages/book_view.dart';
+import 'package:riwayat/pages/book_view2.dart';
 import 'package:riwayat/widgets/themebutton.dart';
 
 class DetailsPage extends StatelessWidget {
   List<Category> categories = Utils.getMockedCategories();
-
   Category category;
+  int index;
 
-  DetailsPage({this.category});
+  DetailsPage({this.category, this.index});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class DetailsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.DARK_GREEN,
-       // brightness: Brightness.light,
+        // brightness: Brightness.light,
         elevation: 0,
       ),
       body: SingleChildScrollView(
@@ -35,8 +36,10 @@ class DetailsPage extends StatelessWidget {
                   right: size.width * .05),
               height: size.height * .28,
               decoration: BoxDecoration(
-                image: DecorationImage(image: AssetImage('assets/imgs/backGBook.jpg'),fit: BoxFit.cover),
-             //   color: Colors.white,
+                image: DecorationImage(
+                    image: AssetImage('assets/imgs/backGBook.jpg'),
+                    fit: BoxFit.cover),
+                //   color: Colors.white,
                 //  borderRadius: BorderRadius.circular(38.5),
                 borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(38.5),
@@ -102,8 +105,14 @@ class DetailsPage extends StatelessWidget {
 
                                         child: ThemeButton(
                                             onClick: () {
-                                             Navigator.push(context,
-                                                  MaterialPageRoute(builder: (context) => BookView(0)));
+                                              Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                      builder: (context) =>
+                                                       BookView( index: 0,
+                                                              category:
+                                                                  this.categories[
+                                                                      index])));
                                             },
                                             color: this.category.color,
                                             label: 'ابدأ التعلم'),
@@ -121,15 +130,17 @@ class DetailsPage extends StatelessWidget {
 
                                         child: ThemeButton(
                                             onClick: () {
-                                              Navigator.push(context,
-                                                  MaterialPageRoute(builder: (context) => BookView(0)));
+                                              Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                      builder: (context) =>
+                                                          BookView()));
                                             },
                                             color: this.category.color,
                                             label: 'التحميل'),
                                       ),
                                     ),
                                   ),
-
                                 ],
                               )),
                         )),
@@ -178,9 +189,12 @@ class DetailsPage extends StatelessWidget {
                 ),
                 child: InkWell(
                   onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => BookView(4)));
-                  //  showDialogFun(context, imam.imgName);
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>
+                                BookView(category: this.categories[index])));
+                    //  showDialogFun(context, imam.imgName);
                   },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
